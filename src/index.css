@@ -1,0 +1,60 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust the height according to your logo */
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+  .logo-container {
+    perspective: 800px; /* Adjust perspective depth */
+  }
+  
+  .logo {
+    width: 200px; /* Adjust width and height of the logo container */
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .logo:hover {
+    transform: rotateY(180deg); /* Adjust rotation angle for hover effect */
+  }
+  
+  .logo img {
+    width: 100%; /* Make sure the logo fills its container */
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  /* CardHome.css */
+/* CardHome.css */
+
+.card-home {
+  transition: transform 0.3s ease, width 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+}
+
+.card-home:hover {
+  transform: scale(1.05) rotate(3deg);
+  width: 105%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #f0f0f0;
+}
+ 
